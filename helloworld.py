@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	# this does not work as I had intended .. prints to console not screen, doh!
+    # this does not work as I had intended .. prints to console not screen,
+    # doh!
     print('Index page')
     print(url_for('hello'))
     print(url_for('show_user_profile', usrname='jdoe'))
