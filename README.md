@@ -23,10 +23,10 @@ cookie RESTful API
 
 HTTP Method|URI|Action
 -----|-----|-----
-GET|http://[hostname]/cookie/api/v1.0/cookies|Retrieve list of tasks
-GET|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Retrieve a task
-POST|http://[hostname]/cookie/api/v1.0/cookies|Create a new task
-PUT|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Update an existing task
-DELETE|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Delete a task
+GET|http://[hostname]/cookie/api/v1.0/cookies|Retrieve list of cookies
+GET|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Retrieve a cookie
+POST|http://[hostname]/cookie/api/v1.0/cookies|Create a new cookie
+PUT|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Update an existing cookie
+DELETE|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Delete a cookie
 
 
