@@ -4,11 +4,8 @@ from flask.ext.sqlalchemy import SQLAlchemy
 
 from config import config
 
-# this must happen before importing the resources ...
+# this must happen before importing the resources to avoid import conflicts
 db = SQLAlchemy()
-
-# from .resources.cookie import CookieAPI, CookieListAPI
-from api.resources.cookie import CookieListAPI, CookieAPI
 
 
 def create_app(config_name):
@@ -19,14 +16,17 @@ def create_app(config_name):
     db.init_app(app)
 
     # initialize the API object:
+    from api.resources.cookie import CookieListAPI, CookieAPI
     api_obj = Api(app)
 
     # set entry points
     api_obj.add_resource(
-        CookieListAPI, '/cookies/api/v1.0/cookies', endpoint='cookies'
+        CookieListAPI, '/v1.0/cookies', endpoint='cookies',
+        subdomain='api'
     )
     api_obj.add_resource(
-        CookieAPI, '/cookies/api/v1.0/cookies/<int:id>', endpoint='cookie'
+        CookieAPI, '/v1.0/cookies/<int:id>', endpoint='cookie',
+        subdomain='api'
     )
 
     return app

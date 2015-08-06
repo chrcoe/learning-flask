@@ -6,27 +6,13 @@ from the pyohio2015 talk
 The goal is to use this repo to learn about flask and work on building an API
 from scratch
 
-todo (task list) RESTful API
-----------------------------
-
-HTTP Method|URI|Action
------|-----|-----
-GET|http://[hostname]/todo/api/v1.0/tasks|Retrieve list of tasks
-GET|http://[hostname]/todo/api/v1.0/tasks/[task_id]|Retrieve a task
-POST|http://[hostname]/todo/api/v1.0/tasks|Create a new task
-PUT|http://[hostname]/todo/api/v1.0/tasks/[task_id]|Update an existing task
-DELETE|http://[hostname]/todo/api/v1.0/tasks/[task_id]|Delete a task
-
-
 cookie RESTful API
 ------------------
 
 HTTP Method|URI|Action
 -----|-----|-----
-GET|http://[hostname]/cookie/api/v1.0/cookies|Retrieve list of cookies
-GET|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Retrieve a cookie
-POST|http://[hostname]/cookie/api/v1.0/cookies|Create a new cookie
-PUT|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Update an existing cookie
-DELETE|http://[hostname]/cookie/api/v1.0/cookies/[task_id]|Delete a cookie
-
-
+GET|http://api.testflask.local:5000/v1.0/cookies|Retrieve list of cookies
+GET|http://api.testflask.local:5000/v1.0/cookies/[task_id]|Retrieve a cookie
+POST|http://api.testflask.local:5000/v1.0/cookies|Create a new cookie
+PUT|http://api.testflask.local:5000/v1.0/cookies/[task_id]|Update an existing cookie
+DELETE|http://api.testflask.local:5000/v1.0/cookies/[task_id]|Delete a cookie
