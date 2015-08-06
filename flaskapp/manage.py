@@ -4,8 +4,8 @@ import os
 from flask.ext.script import Manager, Shell, Command
 from flask.ext.migrate import Migrate, MigrateCommand
 
-from flaskapp import create_app, db
-from flaskapp.models import Cookie
+from api import create_app, db
+from api.models import Cookie
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 manager = Manager(app)

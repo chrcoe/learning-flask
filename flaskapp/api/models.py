@@ -1,4 +1,4 @@
-from flaskapp import db
+from api import db
 
 
 class Cookie(db.Model):
