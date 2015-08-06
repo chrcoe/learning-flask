@@ -8,7 +8,7 @@ from config import config
 db = SQLAlchemy()
 
 # from .resources.cookie import CookieAPI, CookieListAPI
-from resources.cookie import CookieListAPI, CookieAPI
+from api.resources.cookie import CookieListAPI, CookieAPI
 
 
 def create_app(config_name):
