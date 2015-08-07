@@ -25,7 +25,7 @@ def create_app(config_name):
         subdomain='api'
     )
     api_obj.add_resource(
-        CookieAPI, '/v1.0/cookies/<int:id>', endpoint='cookie',
+        CookieAPI, '/v1.0/cookies/<int:cookie_id>', endpoint='cookie',
         subdomain='api'
     )
 
